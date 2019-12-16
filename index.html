@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title> Coding Quiz </title>
+</head>
+<body>
+          <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+        <a class="navbar-brand mr-auto " href="#" id="scoreBoardButton">Highscores</a>
+        <span class="navbar-text">
+           Time Left: <span id="clock"> 0 </span>
+         </span>
+     </nav>
+
+    <div class="row my-4 " id="landingPage">
+      <div class="col-md-3 col-sm-2 col-1"></div>
+         <div class="col-md-6 col-sm-8 col-10">
+           <div class="row">
+            <div class="h2 mx-auto my-3 font-weight-bolder" id="title"> Coding Quiz </div>
+             </div>
+                <div class="row finalScore d-none">
+                 <div class="h5 w-100 " id="">You Scored:  <span id="score"></span>.</div>
+                 <div class="h5 w-100 " id="saveScore">
+
+             </div>
+             <form>
+                <div class="form-row ">
+                 <div class="col-auto"><label for="playerInitials" class=" col-form-label">Name </label></div>
+
+                  <div class=" col-auto ">
+                     <input type="text" class="form-control" id="playerInitials">
+                        </div>
+                            <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+                     </div>
+                </div>
+             </form>
+
+    </div>
+         <div class="row">
+            <div class="col px-0 mb-4">
+                <div class="progress d-none">
+                     <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+             </div>
+            
+         </div>
+                <div class="row ">
+                    <div class="text-center h5 w-100 " id="instruction"><span id="questionContent"></span> </div>
+                </div>
+
+                <div class="row">
+                    <button type="button " class="btn btn-primary btn-lg my-4 mx-auto" id="startQuiz">Start
+                        Quiz</button>
+                </div>
+                <div class="row">
+                    <div id="highScoreList"></div>
+                </div>
+                <div class="row">
+                    <div class="my-4" id="botButtonMenu"></div>
+                </div>
+                <div class="row" id="messageBox">
+                    <hr>
+                    <div class="font-italic h4" id="message"></div>
+                </div>
+            </div>
+            <div class=" col-md-3 col-sm-2 col-1 "></div>
+        </div>
+
+    </div>
+
+    <script src="assets/java.js"></script>
+    <script src="assets/questions.js"></script>
+</body>
+
+</html>
